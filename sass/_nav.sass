@@ -1,0 +1,35 @@
+.nav
+    position: fixed
+    top: 0
+    left: 0
+    height: 10vh
+    width: 100%
+    background-color: $layoutColor
+    display: flex
+    justify-content: center
+    z-index: 5
+    &__menu
+        flex-basis: 60%
+        li
+            display: inline-block
+            list-style: none
+            cursor: pointer
+            a
+                margin: auto 10px
+                text-decoration: none
+                color: $bgColor
+                text-transform: uppercase
+                line-height: 10vh
+                font-size: 1.8rem
+                letter-spacing: 1px
+
+        li:hover 
+            background-color: white
+            a
+                color: $fontColor
+                font-weight: 700
+    &__logo
+        color: $bgColor
+        font-size: 3rem
+        line-height: 10vh
+        padding-right: 30px

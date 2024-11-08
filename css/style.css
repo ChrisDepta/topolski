@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,400;1,700&display=swap");
+html {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  background-color: white;
+}
+
+.wrap {
+  width: 100%;
+  min-height: 200vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 5;
+}
+
+.nav__menu {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.nav__menu li {
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav__menu li a {
+  margin: auto 10px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  line-height: 10vh;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.nav__menu li:hover {
+  background-color: white;
+}
+
+.nav__menu li:hover a {
+  color: black;
+  font-weight: 700;
+}
+
+.nav__logo {
+  color: white;
+  font-size: 3rem;
+  line-height: 10vh;
+  padding-right: 30px;
+}
+
+.baner {
+  height: 100vh;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.baner__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/kitchen5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-transition: 3s;
+  transition: 3s;
+  position: relative;
+}
+
+.baner__img__socials {
+  position: fixed;
+  right: 2vw;
+  top: 10vh;
+  width: 5vw;
+  height: 55vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.baner__img__socials div {
+  height: 4vw;
+  width: 4vw;
+  background-color: #ffffff5e;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transform: translateX(0) scale(1);
+          transform: translateX(0) scale(1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.baner__img__socials div i {
+  line-height: 4vw;
+  font-size: 4rem;
+}
+
+.baner__img__socials div:hover {
+  -webkit-transform: translateX(-20%) scale(1.2);
+          transform: translateX(-20%) scale(1.2);
+}
+
+.baner__img__description {
+  position: absolute;
+  right: 0;
+  bottom: 20vh;
+  height: 15vh;
+  width: 50vw;
+  background-color: #000000b2;
+  text-align: center;
+}
+
+.baner__img__description span {
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 15vh;
+}
+
+.baner__img__message {
+  position: fixed;
+  left: 2vw;
+  bottom: 2vw;
+}
+
+.baner__img__message i {
+  font-size: 10rem;
+  color: #000000b0;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+  -webkit-transition: .6s;
+  transition: .6s;
+  cursor: pointer;
+}
+
+.baner__img__message i:hover {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.article {
+  margin-top: 100px;
+  min-height: 200vh;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.article__title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.article__items {
+  margin-top: 50px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.article__items__item {
+  -ms-flex-preferred-size: 21%;
+      flex-basis: 21%;
+  text-align: center;
+}
+
+.article__items__item div {
+  width: 150px;
+  height: 150px;
+  background-color: cadetblue;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 2px auto;
+}
+
+.article__items__item p {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.article__items__item:nth-child(1) div {
+  background-image: url("../img/kitchenItems.png");
+}
+
+.article__items__item:nth-child(2) div {
+  background-image: url("../img/furnitureItems.png");
+}
+
+.article__items__item:nth-child(3) div {
+  background-image: url("../img/garderobeItems.png");
+}
+
+.article__items__item:nth-child(4) div {
+  background-image: url("../img/badroomItems.png");
+}
+
+.article__motto {
+  margin-top: 100px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  min-height: 100vh;
+  background-color: #f1f5f5;
+  position: relative;
+}
+
+.article__motto h3 {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.article__motto p {
+  position: absolute;
+  top: 20vh;
+  right: 5vw;
+  width: 40%;
+  font-size: 2rem;
+}
+
+.article__motto img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.article__motto img:nth-child(3) {
+  position: absolute;
+  top: 20vh;
+  left: 15vw;
+  height: 65vh;
+  border: 10px white solid;
+}
+
+.article__motto img:nth-child(5) {
+  position: absolute;
+  bottom: 2vw;
+  left: 15vw;
+  width: 170px;
+  margin-left: 20%;
+}
+
+.article__motto img:nth-child(6) {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 40vw;
+  border: 10px white solid;
+  border-radius: 50%;
+}
+
+.projects {
+  margin-top: 100px;
+  height: 90vh;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: cadetblue;
+}
+
+.projects__slider {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  height: 70vh;
+  margin: auto;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.projects__slider__images {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects__slider__images img {
+  width: 100%;
+  height: auto;
+}
+
+.projects__slider button {
+  position: absolute;
+  z-index: 1;
+  height: 10vh;
+  width: 10vh;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-decoration: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #00000090;
+  font-size: 7vh;
+  color: white;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.projects__slider button:hover {
+  color: black;
+  background-color: #ffffff80;
+}
+
+.projects__slider__prev {
+  left: 0;
+}
+
+.projects__slider__next {
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */
